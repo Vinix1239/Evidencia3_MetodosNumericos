@@ -10,3 +10,6 @@ for i in range(3):
         fila.append(elemento)
     matriz.append(fila)
 
+#Imprimir la matriz
+for fila in matriz:
+    print(fila)
