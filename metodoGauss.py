@@ -9,5 +9,12 @@ for i in range(3):
         elemento = float(input("numero: "))
         fila.append(elemento)
     matriz.append(fila)
-for fila in matriz:
-    print(fila)
+renglon = 0
+
+#Bucle para poder iterar sobre cada renglón de la matriz
+for i in range (renglon, renglon < 3, renglon= renglon+1):
+    
+    #Se selecciona el elemento que esta en diagonal como pivote
+    pivote = matriz[renglon, renglon]
+
+    #Toca normalizar el renglón dividiendo cada elemento por el pivote
