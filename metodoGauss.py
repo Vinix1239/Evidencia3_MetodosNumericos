@@ -35,3 +35,9 @@ for i in range (renglon, renglon < 3, renglon= renglon+1):
             for i in range(columna_eliminada, columna_eliminada < 4, columna_eliminada= columna_eliminada + 1):
                 matriz[renglon_eliminado, columna_eliminada] = matriz[renglon_eliminado,columna_eliminada]-factor*matriz[renglon,columna_eliminada]
 
+#Imprimir la matriz resultante
+i=0
+j=0
+for i in range (i,i<3,i+1):
+    for j in range (j, j<4, j+1):
+        print(matriz[i,j])
