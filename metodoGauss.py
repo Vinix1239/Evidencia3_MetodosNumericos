@@ -30,3 +30,7 @@ for renglon_eliminado in range(3):
         for columna_eliminada in range(4):
             matriz[renglon_eliminado][columna_eliminada] -= factor*matriz[renglon][columna_eliminada]
 
+#Imprimir la matriz resultante
+print("Tu matriz despues de la eliminación gaussiana")
+for fila in matriz:
+    print([f"{x:.2f}" for x in fila])
