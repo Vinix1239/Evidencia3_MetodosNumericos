@@ -11,6 +11,7 @@ for i in range(3):
     matriz.append(fila)
 
 #Imprimir la matriz
+print("Tu matriz: ")
 for fila in matriz:
     print(fila)
 
@@ -22,8 +23,10 @@ for renglon in range (3):
 for columna in range(4):
     matriz[renglon][columna] /= pivote
 
+#Eliminar elementos en la misma columna de otros renglones
 for renglon_eliminado in range(3):
     if renglon_eliminado != renglon:
         factor = matriz[renglon_eliminado][renglon]
         for columna_eliminada in range(4):
-            matriz[renglon_eliminado][columna_eliminada]
+            matriz[renglon_eliminado][columna_eliminada] -= factor*matriz[renglon][columna_eliminada]
+
