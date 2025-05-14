@@ -11,10 +11,17 @@ for i in range(3):
     matriz.append(fila)
 renglon = 0
 
-#Bucle para poder iterar sobre cada renglón de la matriz
+#Bucle para poder iterar sobre cada fila de la matriz
 for i in range (renglon, renglon < 3, renglon= renglon+1):
     
     #Se selecciona el elemento que esta en diagonal como pivote
     pivote = matriz[renglon, renglon]
 
-    #Toca normalizar el renglón dividiendo cada elemento por el pivote
+    #Aqui se va a normalizar el renglón dividiendo cada elemento por el pivote
+    columna = 0
+    for i in range(columna, columna < 4, columna = columna + 1):
+        matriz[renglon, columna] = matriz[renglon, columna]/pivote
+
+    #Aqui se va a eliminar los elementos que estan en la misma columna que el pivote seleccionado
+    renglon_eliminado
+    for i in range()
