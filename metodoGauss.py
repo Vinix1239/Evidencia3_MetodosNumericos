@@ -13,3 +13,17 @@ for i in range(3):
 #Imprimir la matriz
 for fila in matriz:
     print(fila)
+
+#Bucle for para la eliminación gaussiana
+for renglon in range (3):
+    pivote = matriz[renglon][renglon]
+
+#Normalizar el renglon dividiendo cada elemento por el pivote
+for columna in range(4):
+    matriz[renglon][columna] /= pivote
+
+for renglon_eliminado in range(3):
+    if renglon_eliminado != renglon:
+        factor = matriz[renglon_eliminado][renglon]
+        for columna_eliminada in range(4):
+            matriz[renglon_eliminado][columna_eliminada]
